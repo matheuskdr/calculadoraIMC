@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+}
+body {
+    background-color: #090e21;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding: 3rem 1rem;
+    background-color: #1d1e32;
+    gap: 15px;
+    border-radius: 10px;
+}
+form h1 {
+    font-size: 1.5rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#altura {
+    width: 100%;
+}
+#peso {
+    width: 100%;
+}
+form span {
+    font-size: 14px;
+}
+input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 12px;
+    margin-top: 1rem;
+}
+.calc,
+.clear {
+    padding: 3px 0;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.calc {
+    background-color: #b9352b;
+    color: #fff;
+}
+.calc:hover {
+    scale: 1.1;
+}
+.clear:hover {
+    scale: 1.1;
+}
+.clear {
+    background-color: #363638;
+    color: #fff;
+}
+.active {
+    display: none;
+}
