@@ -14,29 +14,63 @@
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container">
         <h1>Calculadora de IMC</h1>
-        <form action="">
-            <label for="altura">
-                <span>Altura:</span> 
-                <input id="altura" type="number" placeholder="Exemplo 1.75">
+        <form id="form">
+            <label for="height">
+                <span>Altura:</span>
+                <input id="height" type="number" placeholder="Exemplo 1.75" required>
             </label>
-            <label for="peso">
-                <span>Peso:</span> 
-                <input id="peso" type="number" placeholder="Exemplo 70.5">
+            <label for="weight">
+                <span>Peso:</span>
+                <input id="weight" type="number" placeholder="Exemplo 70.5" required>
             </label>
             <div class="btns">
-                <button class="calc">CALCULAR</button>
-                <button class="clear">LIMPAR</button>
+                <button type="submit" class="calc">CALCULAR</button>
+                <button type="button" class="clear">LIMPAR</button>
             </div>
         </form>
     </div>
-    <div class="container active">
+    <div id="container2" class="container flex active">
         <h1>Seu IMC: <span>26.1</span></h1>
         <h4>Situação atual: <span>Sobrepeso</span></h4>
         <h3>Confira as classificações</h3>
-
+        <div class="classification--area">
+            <div class="classification-title">
+                <p>IMC</p>
+                <p>classificação</p>
+                <p>obesidade</p>
+            </div>
+            <div class="classification">
+                <p>Menor que 18,5</p>
+                <p>Magreza</p>
+                <p>0</p>
+            </div>
+            <div class="classification">
+                <p>Entre 18,5 e 24,9</p>
+                <p>Normal</p>
+                <p>0</p>
+            </div>
+            <div class="classification">
+                <p>Entre 25,0 e 29,9</p>
+                <p>Sobrepeso</p>
+                <p>|</p>
+            </div>
+            <div class="classification">
+                <p>Entre 30,0 e 39,9</p>
+                <p>Obesidade</p>
+                <p>||</p>
+            </div>
+            <div class="classification">
+                <p>Maior que 40,0</p>
+                <p>Obesidade grave</p>
+                <p>|||</p>
+            </div>
+        </div>
+        <button class="back">Voltar</button>
     </div>
+
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

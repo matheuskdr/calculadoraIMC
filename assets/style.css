@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Parkinsans", sans-serif;
 }
+
 body {
     background-color: #090e21;
     color: #fff;
@@ -12,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -21,38 +23,47 @@ body {
     gap: 15px;
     border-radius: 10px;
 }
+
 form h1 {
     font-size: 1.5rem;
 }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-#altura {
+
+#height {
     width: 100%;
 }
-#peso {
+
+#weight {
     width: 100%;
 }
+
 form span {
     font-size: 14px;
 }
+
 input {
     outline: none;
     border: none;
     border-radius: 5px;
     padding: 3px;
 }
+
 .btns {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     gap: 12px;
     margin-top: 1rem;
 }
+
 .calc,
-.clear {
+.clear,
+.back {
     padding: 3px 0;
     width: 200px;
     border: none;
@@ -60,20 +71,76 @@ input {
     cursor: pointer;
     transition: 0.2s;
 }
-.calc {
+
+.calc,
+.back {
     background-color: #b9352b;
     color: #fff;
 }
+
 .calc:hover {
     scale: 1.1;
 }
+
 .clear:hover {
     scale: 1.1;
 }
+
+.back:hover {
+    scale: 1.1;
+}
+
 .clear {
     background-color: #363638;
     color: #fff;
 }
+
 .active {
     display: none;
+}
+
+
+.classification--area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.classification-title {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.classification-title,
+.classification {
+    display: contents;
+}
+
+.classification p,
+.classification-title p {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.flex {
+    align-items: center;
+}
+
+
+.red {
+    color: #ff0000;
+}
+
+.green {
+    color: #00ff00;
+}
+
+.lightOrange {
+    color: #ffbf00;
+}
+
+.orange {
+    color: #ff8c00;
 }
